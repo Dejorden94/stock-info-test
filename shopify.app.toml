@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "stock-information"
+client_id = "72c1fa4fc38c892d0d6bc6c4f32d78f2"
+application_url = "https://colored-tommy-government-collected.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://colored-tommy-government-collected.trycloudflare.com/auth/callback",
+  "https://colored-tommy-government-collected.trycloudflare.com/auth/shopify/callback",
+  "https://colored-tommy-government-collected.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-9c1e4939.myshopify.com"
